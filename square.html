@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GeoCalc — Square Calculations</title>
+  <link rel="stylesheet" href="shap.css">
+  <link rel="icon" href="calculator-icon.png" type="image/png">
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo">
+      <img src="calculator-icon.png" alt="GeoCalc Logo" class="logo-img">
+      <a href="index.html">
+        <h1>GeoCalc — <span class="highlight">Geometric Calculator</span></h1>
+    </a>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="square.html" class="active">square</a></li>
+        <li><a href="rectangle.html">Rectangle</a></li>
+        <li><a href="triangle.html">Triangle</a></li>
+        <li><a href="circle.html">Circle</a></li>
+        <li><a href="cube.html">cube</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Section -->
+  <main class="main-content">
+    <h1>Square Calculations</h1>
+
+    <section class="calculator-section">
+      <h2>Enter the side length of the square:</h2>
+      <input type="number" id="side" placeholder="Side length (in units)" required>
+      <button onclick="calculateSquare()">Calculate</button>
+    </section>
+
+    <section class="results-section">
+      <h3>Results:</h3>
+      <p id="squareArea"></p>
+      <p id="squarePerimeter"></p>
+    </section>
+  </main>
+
+  <!-- Image Section -->
+  <section class="image-section">
+    <img src="square.png" alt="Square Image">
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 GeoCalc. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    function calculateSquare() {
+      var side = document.getElementById("side").value;
+      var area = side * side;
+      var perimeter = 4 * side;
+
+      document.getElementById("squareArea").textContent = "Area: " + area + " square units";
+      document.getElementById("squarePerimeter").textContent = "Perimeter: " + perimeter + " units";
+    }
+  </script>
+
+</body>
+</html>

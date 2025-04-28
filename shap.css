@@ -1,0 +1,122 @@
+/* Reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  a {
+    text-decoration: none; 
+    color: inherit; 
+  }  
+
+  /* Header / Navbar */
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 10px 30px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    color: orange;
+    font-size: 18px;
+  }
+  
+  .logo-img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+  
+  nav {
+    flex-grow: 1;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links li a:hover {
+    color: orange;
+  }
+  
+  .nav-links li a.active {
+    color: orange;
+  }
+  
+  /* Main Content */
+  .main-content {
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .main-content h1 {
+    font-size: 32px;
+    color: orange;
+  }
+  
+  .calculator-section {
+    margin-top: 30px;
+  }
+  
+  input[type="number"] {
+    padding: 10px;
+    font-size: 16px;
+    width: 200px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: orange;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 5px;
+  }
+  
+  .results-section {
+    margin-top: 30px;
+    font-size: 18px;
+  }
+  
+  /* Image Section */
+  .image-section {
+    text-align: center;
+    margin: 50px 0;
+  }
+  
+  .image-section img {
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: orange;
+    text-align: center;
+    padding: 20px;
+    color: white;
+  }
+  

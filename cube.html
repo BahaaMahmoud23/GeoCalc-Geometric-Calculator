@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cube Calculations</title>
+  <link rel="stylesheet" href="shap.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="logo">
+    <img src="calculator-icon.png" alt="GeoCalc Logo" class="logo-img">
+   
+    <a href="index.html">
+      <h1>GeoCalc — <span class="highlight">Geometric Calculator</span></h1>
+     </a>
+  </div>
+  <nav>
+    <ul class="nav-links">
+      <li><a href="square.html">square</a></li>
+      <li><a href="rectangle.html">Rectangle</a></li>
+      <li><a href="triangle.html">Triangle</a></li>
+      <li><a href="circle.html">Circle</a></li>
+      <li><a href="cube.html" class="active">cube</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="main-content">
+  <h1>Cube Calculations</h1>
+
+  <section class="calculator-section">
+    <h2>Enter the side length:</h2>
+    <input type="number" id="side" placeholder="Side Length" required>
+    <button onclick="calculateCube()">Calculate</button>
+  </section>
+
+  <section class="results-section">
+    <h3>Results:</h3>
+    <p id="cubeSurfaceArea"></p>
+    <p id="cubeVolume"></p>
+  </section>
+
+  <section class="image-section">
+    <img src="cube.png" alt="Cube Image">
+  </section>
+</main>
+
+<footer class="footer">
+  <p>&copy; 2025 GeoCalc. All rights reserved.</p>
+</footer>
+
+<script>
+function calculateCube() {
+  const side = parseFloat(document.getElementById('side').value);
+  if (isNaN(side)) return;
+
+  const surfaceArea = 6 * side * side;
+  const volume = side * side * side;
+
+  document.getElementById('cubeSurfaceArea').textContent = "Surface Area: " + surfaceArea + " square units";
+  document.getElementById('cubeVolume').textContent = "Volume: " + volume + " cubic units";
+}
+</script>
+
+</body>
+</html>
